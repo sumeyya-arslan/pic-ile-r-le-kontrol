@@ -1,0 +1,211 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1829 ]
+[d frameptr 6 ]
+"62 C:\Program Files\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"18 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\main.c
+[v _writeDigit writeDigit `(v  1 e 0 0 ]
+"31
+[v _displayNumber displayNumber `(v  1 e 0 0 ]
+"62
+[v _relay_control relay_control `(v  1 e 0 0 ]
+"66
+[v _main main `(v  1 e 0 0 ]
+"52 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+"76 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+"60 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+"93
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 0 0 ]
+[s S69 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360 C:\Program Files\Microchip\xc8\v1.34\include\pic16f1829.h
+[s S78 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S83 . 1 `S69 1 . 1 0 `S78 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES83  1 e 1 @11 ]
+[s S186 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"477
+[u S192 . 1 `S186 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES192  1 e 1 @13 ]
+"501
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"1152
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1201
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1239
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S31 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1498
+[s S40 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S45 . 1 `S31 1 . 1 0 `S40 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES45  1 e 1 @149 ]
+"1665
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1722
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1793
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"2048
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2092
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2130
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S157 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2147
+[u S166 . 1 `S157 1 . 1 0 ]
+[v _LATCbits LATCbits `VES166  1 e 1 @270 ]
+"2801
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2834
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2883
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2929
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2964
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3463
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3520
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3567
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"7298
+[v _IOCBF4 IOCBF4 `VEb  1 e 0 @7348 ]
+"7300
+[v _IOCBF5 IOCBF5 `VEb  1 e 0 @7349 ]
+"7302
+[v _IOCBF6 IOCBF6 `VEb  1 e 0 @7350 ]
+"7304
+[v _IOCBF7 IOCBF7 `VEb  1 e 0 @7351 ]
+"7306
+[v _IOCBN4 IOCBN4 `VEb  1 e 0 @7340 ]
+"7308
+[v _IOCBN5 IOCBN5 `VEb  1 e 0 @7341 ]
+"7310
+[v _IOCBN6 IOCBN6 `VEb  1 e 0 @7342 ]
+"7312
+[v _IOCBN7 IOCBN7 `VEb  1 e 0 @7343 ]
+"16 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\main.c
+[v _Digit Digit `[10]uc  1 e 10 0 ]
+"66
+[v _main main `(v  1 e 0 0 ]
+{
+"83
+} 0
+"62
+[v _relay_control relay_control `(v  1 e 0 0 ]
+{
+[v relay_control@state state `uc  1 a 1 wreg ]
+[v relay_control@state state `uc  1 a 1 wreg ]
+[v relay_control@state state `uc  1 a 1 1 ]
+"64
+} 0
+"31
+[v _displayNumber displayNumber `(v  1 e 0 0 ]
+{
+"32
+[v displayNumber@d4 d4 `uc  1 a 1 3 ]
+[v displayNumber@d3 d3 `uc  1 a 1 2 ]
+[v displayNumber@d2 d2 `uc  1 a 1 1 ]
+[v displayNumber@d1 d1 `uc  1 a 1 0 ]
+"31
+[v displayNumber@number1 number1 `ui  1 p 2 9 ]
+"60
+} 0
+"18
+[v _writeDigit writeDigit `(v  1 e 0 0 ]
+{
+[v writeDigit@digit digit `uc  1 a 1 wreg ]
+"19
+[v writeDigit@i i `uc  1 a 1 4 ]
+"18
+[v writeDigit@digit digit `uc  1 a 1 wreg ]
+"20
+[v writeDigit@digit digit `uc  1 a 1 3 ]
+"29
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 6 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 1 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 3 ]
+"26
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 1 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 3 ]
+"31
+} 0
+"52 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+{
+"66
+} 0
+"93 C:\Users\stajyer.elektronik\Desktop\mcc(4digit-display).X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 0 0 ]
+{
+"123
+} 0
